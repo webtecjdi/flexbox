@@ -1,8 +1,9 @@
 #container {
     display: flex;
-    width: 100%;
+    max-width: 100%;
     background-color: #CCEBC0;
-    /* display: block; */
+    /* height: 800px; */
+
 
     flex-direction: row;
     /* flex-direction: column; */
@@ -12,34 +13,59 @@
     /* justify-content: flex-start; */
     /* justify-content: flex-end; */
     /* justify-content: center; */
-    /* justify-content: space-between; */
-    justify-content: space-around;
+    justify-content: space-between;
+    /* justify-content: space-around; */
 
     /* align-items: baseline; */
-    /* align-items: center; */
+    align-items: center;
     /* align-items: flex-end; */
-    align-items: flex-start;
+    /* align-items: flex-start; */
     /* align-items: stretch; */ 
+
+    flex-wrap: wrap;
+    /* flex-wrap: nowrap; */
+    /* flex-wrap: wrap-reverse; */
+
+    /* SHORTHAND FLEX-DIRECTION/FLEX-WRAP)*/
+    /* flex-flow: row wrap; */
+
+    /* ALIGN-CONTENT NECESSITA TER WRAP E DEFINIR HEIGHT*/
+    /* align-content: flex-start; */
+    /* align-content: flex-end; */
+    /* align-content: center; */
+    /* align-content: space-between; */
+    /* align-content: space-around; */
 }
 #red{
     background-color: red;
-    width: 20%;
+    width: 70%;
     height: 200px;
+    /* order: 1; */
 }
 #green{
     background-color: green;
     width: 20%;
-    height: 300px;
+    height: 200px;
+    /* order:1; */
 }
 #blue{
     background-color: blue;
-    width: 20%;
-    height: 200px;
-    align-self: flex-end;
+    width: 30%;
+    height: 100px;
+    /* order: 3; */
+    /* align-self: center; */
+
 }
 #black{
     background-color: black;
-    width: 20%;
+    width: 30%; 
     height: 100px;
-    align-self: center;
+    /* order: 2; */
+    /* align-self: center; */
+}
+#pink{
+    background-color: pink;
+    width: 30%;
+    height: 100px;
+ 
 }
